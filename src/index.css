@@ -1,0 +1,30 @@
+@tailwind base;
+  @layer base {
+    main {
+      @apply flex flex-col md:justify-center items-center h-screen bg-VeryLightBlue
+    }
+  }
+@tailwind components;
+@tailwind utilities;
+
+.gradient1 {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+.gradient2 {
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+}
+
+ul {
+  @apply flex flex-col gap-4
+}
+
+ul>li {
+  @apply flex justify-between h-[56px] items-center rounded-xl px-4 md:text-Body
+}
+
+button {
+  @apply bg-DarkNavy w-full h-14 rounded-[128px] md:mt-3 text-White font-bold text-[18px] hover:cursor-pointer
+}
+button:hover {
+  @apply gradient1
+}
