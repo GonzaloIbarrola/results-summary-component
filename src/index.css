@@ -1,7 +1,10 @@
 @tailwind base;
   @layer base {
     main {
-      @apply flex flex-col md:justify-center items-center h-screen bg-VeryLightBlue
+      @apply flex flex-col md:justify-center items-center h-screen 
+    }
+    body {
+      @apply bg-VeryLightBlue
     }
   }
 @tailwind components;
